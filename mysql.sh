@@ -28,13 +28,13 @@ fi
 
 
 
-dnf install mysql-server -y &>>$LOGFILE
+dnf install mysql-server -y &>>$LOG_FILE
 VALIDATE $? "Installing MySQL Server"
 
-systemctl enable mysqld &>>$LOGFILE
+systemctl enable mysqld &>>$LOG_FILE
 VALIDATE $? "Enabling MySQL Server"
 
-systemctl start mysqld &>>$LOGFILE
+systemctl start mysqld &>>$LOG_FILE
 VALIDATE $? "Starting MySQL Server"
 
 
