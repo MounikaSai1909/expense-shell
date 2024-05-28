@@ -81,7 +81,7 @@ VALIDATE $? "installing mysql"
 
 
 #mysql -h 172.31.27.17 -uroot -pExpenseApp@1 < /app/schema/backend.sql
-mysql --host=23.22.163.148 --user=root --password=${mysql_root_password} < /app/schema/backend.sql &>> $LOG_FILE
+mysql --host=172.31.29.40 --user=root --password=${mysql_root_password} < /app/schema/backend.sql &>> $LOG_FILE
 VALIDATE $? "Schema loading"
 
 systemctl restart backend &>> $LOG_FILE
