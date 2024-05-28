@@ -38,7 +38,7 @@ dnf install nodejs -y &>> $LOG_FILE
 VALIDATE $? "Installing node js"
 
 
-id expense
+id expense &>> $LOG_FILE
 if [ $? -ne 0 ]
 then
     useradd expense
