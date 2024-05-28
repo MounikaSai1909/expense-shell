@@ -48,6 +48,7 @@ VALIDATE $? "Starting MySQL Server"
 
 #Below code will be useful for idemponent nature
 mysql -h db.swamy.online -uroot -p${mysql_root_password} -e 'show databases;'
+#mysql -h db.swamy.online -uroot -pExpenseApp@1  -e 'show databases;'
 #mysql --host=44.220.156.137 --user=root --password=${mysql_root_password} -e 'SHOW DATABASES;' &>> $LOG_FILE
 if [ $? -ne 0 ]
 then
